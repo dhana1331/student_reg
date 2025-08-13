@@ -1,40 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Go to Sign Up</title>
-<style>
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background: linear-gradient(120deg, #a6e3ff, #d0f4ff);
-        font-family: Arial, sans-serif;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanu Prakash – Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0b1220;
+      --muted:#4b5563;
+      --brand:#1e4ed8; 
+      --border:#e5e7eb;
     }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background:#f7f7fb;
+    }
+    .page{
+      width: 210mm;           
+      min-height: 297mm;      
+      margin: 16px auto;
+      background:#fff;
+      box-shadow:0 10px 30px rgba(2,6,23,.12);
+      border-radius:14px;
+      overflow:hidden;
+      padding:22mm 18mm;
+    }
+    header{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      border-bottom:2px solid var(--border);
+      padding-bottom:14px;
+      margin-bottom:16px;
+    }
+    .name{
+      font-size:28px;
+      font-weight:800;
+      letter-spacing:.2px;
+      color:var(--brand);
+    }
+    .role{
+      font-weight:600;
+    }
+    .contacts{
+      display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+      font-size:12px;color:var(--muted);
+    }
+    .contacts a{color:var(--brand);text-decoration:none}
+    .grid{
+      display:grid;gap:14px;
+    }
+    h2{
+      margin:0 0 6px; font-size:14px; letter-spacing:.6px; text-transform:uppercase; color:var(--brand);
+    }
+    p{margin:0;line-height:1.45}
+    section{padding:8px 0 2px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
-    button {
-        padding: 15px 30px;
-        font-size: 18px;
-        border: none;
-        border-radius: 25px;
-        background: linear-gradient(90deg, #00c4cc, #66e0e3);
-        color: white;
-        cursor: pointer;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+    
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th,td{border:1px solid var(--border);padding:8px;vertical-align:top}
+    th{background:#f3f6ff;color:#1f2937;text-align:left;font-weight:600}
 
-    button:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+    
+    ul{margin:0;padding-left:18px}
+    li{margin:4px 0}
+
+    .item{margin-bottom:8px}
+    .employer{font-weight:700}
+    .period{color:var(--muted);font-size:12px}
+
+    .skill-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .badge{border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:12px}
+
+    .small{font-size:12px;color:var(--muted)}
+
+  
+    @page{size:A4;margin:10mm}
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none;margin:0;border-radius:0;padding:12mm}
+      a{color:inherit;text-decoration:none}
     }
-</style>
+  </style>
 </head>
 <body>
+  <main class="page">
+    <header>
+      <div class="name">HANU PRAKASH</div>
+      <div class="role">UI/UX Designer and Graphic Designer</div>
+      <div class="contacts">
+        <span>📞 6361476926</span>
+        <span>• Tirunelveli</span>
+        <span>•</span>
+        <a href="mailto:hanu752003@gmail.com">hanu752003@gmail.com</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/hanu-prakash-a5b58b0" target="_blank" rel="noreferrer">linkedin.com/in/hanu-prakash-a5b58b0</a>
+      </div>
+    </header>
 
-<button onclick="window.location.href='form.html'">Open Registration Form</button>
+    <section>
+      <h2>Objective</h2>
+      <p>
+        Enthusiastic and detail‑oriented UI/UX and Graphic Designer with hands‑on experience in designing innovative solutions using Figma and front‑end technologies. Eager to apply creative design skills and technical knowledge to develop user‑friendly and visually appealing digital products. Committed to continuous learning and contributing effectively in collaborative team environments.
+      </p>
+    </section>
 
+    <section>
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:40%">Degree</th>
+            <th>Institute</th>
+            <th style="width:12%">Year</th>
+            <th style="width:12%">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bachelor of Technology (EEE)</td>
+            <td>Francis Xavier Engineering College</td>
+            <td>2025</td>
+            <td>7.5</td>
+          </tr>
+          <tr>
+            <td>Major of Biology</td>
+            <td>Government Higher Secondary School</td>
+            <td>2023</td>
+            <td>72%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="item">
+        <div class="employer">Motherson Automotive Technologies &amp; Engineering</div>
+        <div class="period">Jan 2025 – Feb 2025</div>
+        <p class="small" style="margin-top:6px">
+          Involved in vehicle electronic systems, electronics, and embedded engineering areas—central to automotive components like wiring, lighting, telematics, and control modules.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="grid">
+        <div>
+          <strong>Design:</strong> Figma, Canva, Adobe Photoshop, Adobe Illustrator.
+        </div>
+        <div>
+          <strong>Web Dev:</strong> HTML, CSS.
+        </div>
+        <div>
+          <strong>Tools:</strong> GitHub, VS Code.
+        </div>
+        <div>
+          <strong>Soft Skills:</strong> Creative Thinking, Teamwork, Time Management, Problem Solving, Leadership.
+        </div>
+        <div>
+          <strong>Language:</strong> C.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="item">
+        <strong>Solar Panel Maintenance & Appliance Condition Enhancement with Cloud IoT Reporting System</strong>
+        <p class="small">
+          Sensors monitor solar panels and send data to the cloud for analysis. Alerts and dashboards help fix issues quickly, improving efficiency and lifespan.
+        </p>
+      </div>
+      <div class="item">
+        <strong>Village Food App — UI/UX</strong>
+        <p class="small">
+          A mobile app to connect village farmers, home cooks, and local customers to buy/sell fresh, homemade, and organic village foods easily.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements / Extra Curricular Activities</h2>
+      <ul>
+        <li>Actively participated and won prizes in various sports events.</li>
+        <li>Successfully completed professional courses in UI/UX Design and Graphic Design.</li>
+      </ul>
+    </section>
+
+  </main>
 </body>
 </html>
